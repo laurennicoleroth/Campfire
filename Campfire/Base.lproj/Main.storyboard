@@ -36,6 +36,7 @@
                                 </state>
                                 <connections>
                                     <action selector="changeLabel:" destination="9pv-A4-QxB" eventType="touchUpInside" id="MfI-vJ-mS9"/>
+                                    <action selector="refreshTime:" destination="9pv-A4-QxB" eventType="touchUpInside" id="xJK-Gn-h0Q"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uJw-tB-a5Q">

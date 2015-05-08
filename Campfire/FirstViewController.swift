@@ -13,8 +13,8 @@ class FirstViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var simpleLabel: UILabel!
     
-    @IBAction func changeLabel(sender: AnyObject) {
-        
+    @IBAction func refreshTime(sender: AnyObject) {
+        let now = NSDate()
     }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
