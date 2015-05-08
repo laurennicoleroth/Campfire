@@ -15,6 +15,10 @@ class FirstViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func refreshTime(sender: AnyObject) {
         let now = NSDate()
+        
+        //create dateformatter, set to hours:minutes am/pm
+        var formatter = NSDateFormatter()
+        formatter.dateFormat = "HH:mm a"
     }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
