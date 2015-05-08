@@ -8,14 +8,18 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class FirstViewController: UIViewController, UITextFieldDelegate {
 
-    @IBOutlet weak var simpleTextField: UITextField!
+    @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var simpleLabel: UILabel!
     
     @IBAction func changeLabel(sender: AnyObject) {
-        simpleLabel.text = "Hello, " + simpleTextField.text + "!"
-        self.simpleTextField.resignFirstResponder()
+        
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return false
     }
     
     override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
