@@ -19,6 +19,8 @@ class FirstViewController: UIViewController, UITextFieldDelegate {
         //create dateformatter, set to hours:minutes am/pm
         var formatter = NSDateFormatter()
         formatter.dateFormat = "HH:mm a"
+        
+        timeLabel.text = formatter.stringFromDate(now)
     }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
