@@ -10,8 +10,12 @@ import UIKit
 
 class FirstViewController: UIViewController, UITextFieldDelegate {
 
+    
+    @IBAction func doSomething(sender: AnyObject) {
+        println("it works!")
+    }
+    
     @IBOutlet weak var timeLabel: UILabel!
-    @IBOutlet weak var simpleLabel: UILabel!
     
     @IBAction func refreshTime(sender: AnyObject) {
         let now = NSDate()
@@ -22,15 +26,7 @@ class FirstViewController: UIViewController, UITextFieldDelegate {
         
         timeLabel.text = formatter.stringFromDate(now)
     }
-    
-    func textFieldShouldReturn(textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
-        return false
-    }
-    
-    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
-        self.view.endEditing(true)
-    }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
