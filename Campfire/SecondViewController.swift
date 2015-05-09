@@ -18,10 +18,11 @@ class SecondViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
     }
     
     func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        //determine how many rows to populate in the picker view, we want a row for each mood
+        //tell data source how many rows to populate in the picker view, we want a row for each mood
         return moodArray.count
     }
     
+    //implement delegate protocol
     func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String! {
         return moodArray[row]
     }
