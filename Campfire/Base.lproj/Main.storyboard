@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--First-->
@@ -53,35 +54,81 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qyM-KL-Lmq">
-                                <rect key="frame" x="26" y="71" width="53" height="30"/>
-                                <state key="normal" title="Refresh">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Cv-N5-YKb">
+                                <rect key="frame" x="16" y="16" width="56" height="30"/>
+                                <state key="normal" title="Top Left">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="doSomething:" destination="9pv-A4-QxB" eventType="touchUpInside" id="N1a-yS-jnM"/>
-                                    <action selector="refreshTime:" destination="9pv-A4-QxB" eventType="touchUpInside" id="Ssg-fX-lfg"/>
-                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time:   " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CFg-b6-gtM">
-                                <rect key="frame" x="26" y="28" width="267" height="21"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="xW0-QK-Rx2">
+                                <rect key="frame" x="16" y="68" width="568" height="29"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                    <segment title="Third"/>
+                                    <segment title="Fourth"/>
+                                    <segment title="Fifth"/>
+                                </segments>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Title: An Interesting Title Goes Here" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3oY-XV-TKK">
+                                <rect key="frame" x="16" y="119" width="560" height="39"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jyr-FI-RQH">
+                                <rect key="frame" x="16" y="154" width="568" height="272"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oXa-qO-SX2">
+                                <rect key="frame" x="518" y="16" width="66" height="30"/>
+                                <state key="normal" title="Top Right">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N2u-E8-HqD">
+                                <rect key="frame" x="16" y="513" width="82" height="30"/>
+                                <state key="normal" title="Bottom Left">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6CM-aB-n1J">
+                                <rect key="frame" x="493" y="513" width="91" height="30"/>
+                                <state key="normal" title="Bottom Right">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="3oY-XV-TKK" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="2c7-wj-iMy"/>
                             <constraint firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="6BV-lF-sBN"/>
+                            <constraint firstItem="N2u-E8-HqD" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="968-kk-OfE"/>
+                            <constraint firstItem="6CM-aB-n1J" firstAttribute="trailing" secondItem="tsR-hK-woN" secondAttribute="trailingMargin" id="9ay-ZH-dOi"/>
+                            <constraint firstItem="8Cv-N5-YKb" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="9jq-yK-qqg"/>
+                            <constraint firstItem="xW0-QK-Rx2" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="CBO-VA-1BZ"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="6CM-aB-n1J" secondAttribute="bottom" constant="8" id="CKX-zy-reW"/>
+                            <constraint firstItem="xW0-QK-Rx2" firstAttribute="top" secondItem="8Cv-N5-YKb" secondAttribute="bottom" constant="22" id="E4h-mU-Uia"/>
+                            <constraint firstItem="xW0-QK-Rx2" firstAttribute="trailing" secondItem="tsR-hK-woN" secondAttribute="trailingMargin" id="GIo-zo-djz"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="N2u-E8-HqD" secondAttribute="bottom" constant="8" id="H6k-Hc-Tc2"/>
+                            <constraint firstItem="oXa-qO-SX2" firstAttribute="trailing" secondItem="tsR-hK-woN" secondAttribute="trailingMargin" id="Lph-CW-eAs"/>
+                            <constraint firstItem="jyr-FI-RQH" firstAttribute="trailing" secondItem="tsR-hK-woN" secondAttribute="trailingMargin" id="Nmh-06-smv"/>
+                            <constraint firstItem="jyr-FI-RQH" firstAttribute="top" secondItem="3oY-XV-TKK" secondAttribute="bottom" constant="-4" id="Pfd-O2-n0h"/>
+                            <constraint firstItem="8Cv-N5-YKb" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="-4" id="SAE-KF-UYh"/>
+                            <constraint firstItem="jyr-FI-RQH" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="SAX-Ug-dOI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3oY-XV-TKK" secondAttribute="trailing" constant="8" id="XNp-dG-pST"/>
                             <constraint firstItem="A5M-7J-77L" firstAttribute="top" secondItem="KQZ-1w-vlD" secondAttribute="bottom" constant="8" symbolic="YES" id="cfb-er-3JN"/>
                             <constraint firstItem="A5M-7J-77L" firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="e1l-AV-tCB"/>
                             <constraint firstAttribute="centerY" secondItem="KQZ-1w-vlD" secondAttribute="centerY" id="exm-UA-ej4"/>
+                            <constraint firstItem="oXa-qO-SX2" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="-4" id="oZA-Ep-Yip"/>
+                            <constraint firstItem="xW0-QK-Rx2" firstAttribute="top" secondItem="oXa-qO-SX2" secondAttribute="bottom" constant="22" id="pYb-ID-LhN"/>
+                            <constraint firstItem="3oY-XV-TKK" firstAttribute="top" secondItem="xW0-QK-Rx2" secondAttribute="bottom" constant="23" id="xad-Ta-Kcw"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
-                    <connections>
-                        <outlet property="timeLabel" destination="CFg-b6-gtM" id="1pr-dJ-xsS"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
@@ -99,29 +146,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
-                                <rect key="frame" x="195" y="279" width="210" height="42"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by SecondViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDk-cv-Gan">
-                                <rect key="frame" x="192" y="329" width="216" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="fBL-wM-zYJ">
+                                <rect key="frame" x="41" y="147" width="499" height="162"/>
+                                <date key="date" timeIntervalSinceReferenceDate="452886313.43087798">
+                                    <!--2015-05-09 17:45:13 +0000-->
+                                </date>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RqQ-Te-Rja">
+                                <rect key="frame" x="240" y="350" width="120" height="30"/>
+                                <state key="normal" title="What day is that?">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="displayDay:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="FNd-sR-cLC"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="top" secondItem="zEq-FU-wV5" secondAttribute="bottom" constant="8" symbolic="YES" id="Day-4N-Vmt"/>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="JgO-Fn-dHn"/>
-                            <constraint firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="qqM-NS-xev"/>
-                            <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
+                            <constraint firstItem="RqQ-Te-Rja" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="Hdt-l0-29E"/>
+                            <constraint firstItem="fBL-wM-zYJ" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="-10" id="bJV-IB-n9n"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fBL-wM-zYJ" secondAttribute="trailing" constant="44" id="hvk-bf-vXu"/>
+                            <constraint firstItem="RqQ-Te-Rja" firstAttribute="top" secondItem="fBL-wM-zYJ" secondAttribute="bottom" constant="41" id="pqj-dv-SeP"/>
+                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="RqQ-Te-Rja" secondAttribute="bottom" constant="171" id="rJ0-EA-4QG"/>
+                            <constraint firstItem="fBL-wM-zYJ" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="25" id="tgn-MG-9oX"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <connections>
+                        <outlet property="datePicker" destination="fBL-wM-zYJ" id="zkj-sB-CJh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>

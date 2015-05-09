@@ -10,6 +10,29 @@ import UIKit
 
 class SecondViewController: UIViewController {
     
+    
+    @IBOutlet weak var datePicker: UIDatePicker!
+    
+    @IBAction func displayDay(sender: AnyObject) {
+        //grab the selected date from the date picker
+        var chosenDate = self.datePicker.date
+        
+        //create an NSDateFormatter
+        var formatter = NSDateFormatter()
+        formatter.dateFormat = "EEEE"
+        
+        
+        //grab the day and create a message
+        let day = formatter.stringFromDate(chosenDate)
+        let result = "That was a \(day)"
+        
+        //create an alert
+        let myAlert = UIAlertController(title: result, message: nil, preferredStyle: UIAlertControllerStyle.Alert)
+        
+        //show the alert
+        self.presentViewController(myAlert, animated: true, completion: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
