@@ -146,12 +146,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="fBL-wM-zYJ">
-                                <rect key="frame" x="41" y="147" width="499" height="162"/>
-                                <date key="date" timeIntervalSinceReferenceDate="452886313.43087798">
-                                    <!--2015-05-09 17:45:13 +0000-->
-                                </date>
-                            </datePicker>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RqQ-Te-Rja">
                                 <rect key="frame" x="240" y="350" width="120" height="30"/>
                                 <state key="normal" title="What day is that?">
@@ -161,21 +155,20 @@
                                     <action selector="displayDay:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="FNd-sR-cLC"/>
                                 </connections>
                             </button>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9TY-LK-vcO">
+                                <rect key="frame" x="0.0" y="90" width="600" height="162"/>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="RqQ-Te-Rja" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="Hdt-l0-29E"/>
-                            <constraint firstItem="fBL-wM-zYJ" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="-10" id="bJV-IB-n9n"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="fBL-wM-zYJ" secondAttribute="trailing" constant="44" id="hvk-bf-vXu"/>
-                            <constraint firstItem="RqQ-Te-Rja" firstAttribute="top" secondItem="fBL-wM-zYJ" secondAttribute="bottom" constant="41" id="pqj-dv-SeP"/>
-                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="RqQ-Te-Rja" secondAttribute="bottom" constant="171" id="rJ0-EA-4QG"/>
-                            <constraint firstItem="fBL-wM-zYJ" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="25" id="tgn-MG-9oX"/>
+                            <constraint firstItem="9TY-LK-vcO" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="70" id="TUD-Re-Cfq"/>
+                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="RqQ-Te-Rja" secondAttribute="bottom" constant="171" id="bGP-RN-9ux"/>
+                            <constraint firstItem="9TY-LK-vcO" firstAttribute="centerX" secondItem="RqQ-Te-Rja" secondAttribute="centerX" id="d76-fI-eYs"/>
+                            <constraint firstItem="9TY-LK-vcO" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="jpE-Tv-YpM"/>
+                            <constraint firstItem="RqQ-Te-Rja" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="ydj-wO-lGo"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
-                    <connections>
-                        <outlet property="datePicker" destination="fBL-wM-zYJ" id="zkj-sB-CJh"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>

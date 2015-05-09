@@ -8,7 +8,23 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class SecondViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate{
+    
+    let moodArray = ["Happy" , "Sad", "Maudlin", "Ecstatic", "Overjoyed", "Optimistic", "Bewildered", "Cynical", "Giddy", "Indifferent", "Relaxed"]
+    
+    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+        //tell data source how many components to show in the picker view (we want 1)
+        return 1
+    }
+    
+    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        //determine how many rows to populate in the picker view, we want a row for each mood
+        return moodArray.count
+    }
+    
+    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String! {
+        return moodArray[row]
+    }
     
     
     @IBOutlet weak var datePicker: UIDatePicker!
@@ -31,6 +47,9 @@ class SecondViewController: UIViewController {
         
         //show the alert
         self.presentViewController(myAlert, animated: true, completion: nil)
+        
+        //add an "OK" button
+        myAlert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
     }
     
     override func viewDidLoad() {
