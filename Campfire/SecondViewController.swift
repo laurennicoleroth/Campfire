@@ -27,6 +27,10 @@ class SecondViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
         return moodArray[row]
     }
     
+    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        var newBackgroundColor : UIColor
+    }
+    
     
     @IBOutlet weak var datePicker: UIDatePicker!
     
