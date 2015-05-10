@@ -29,6 +29,21 @@ class SecondViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
     
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         var newBackgroundColor : UIColor
+        
+        switch row {
+        case 0, 3, 4:
+            newBackgroundColor = UIColor.yellowColor()
+        case 5, 8:
+            newBackgroundColor = UIColor.redColor()
+        case 1, 2:
+            newBackgroundColor = UIColor.darkGrayColor()
+        case 6, 7, 9:
+            newBackgroundColor = UIColor.lightGrayColor()
+        default:
+            newBackgroundColor = UIColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        }
+        
+        self.view.backgroundColor = newBackgroundColor
     }
     
     
