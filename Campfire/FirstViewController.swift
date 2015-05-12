@@ -7,13 +7,18 @@
 //
 
 import UIKit
+import Parse
 
 class FirstViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        println("all running ok")
+        let testObject = PFObject(className: "TestObject")
+        testObject["foo"] = "bar"
+        testObject.saveInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
+            println("Object has been saved.")
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -23,4 +28,3 @@ class FirstViewController: UIViewController, UITextFieldDelegate {
 
 
 }
-
