@@ -22,6 +22,7 @@
 		4EFDCC681B027C6D000DA8AE /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EFDCC671B027C6D000DA8AE /* Accounts.framework */; };
 		4EFDCC6A1B027C79000DA8AE /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EFDCC691B027C79000DA8AE /* Social.framework */; };
 		4EFDCC6C1B027CA9000DA8AE /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EFDCC6B1B027CA9000DA8AE /* libsqlite3.dylib */; };
+		4EFDCC6E1B029641000DA8AE /* FoxTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFDCC6D1B02963F000DA8AE /* FoxTableViewController.swift */; };
 		4EFFF9FD1AFAEB5500C45121 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFFF9FC1AFAEB5500C45121 /* AppDelegate.swift */; };
 		4EFFF9FF1AFAEB5500C45121 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFFF9FE1AFAEB5500C45121 /* FirstViewController.swift */; };
 		4EFFFA011AFAEB5500C45121 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFFFA001AFAEB5500C45121 /* SecondViewController.swift */; };
@@ -57,6 +58,7 @@
 		4EFDCC671B027C6D000DA8AE /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		4EFDCC691B027C79000DA8AE /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		4EFDCC6B1B027CA9000DA8AE /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		4EFDCC6D1B02963F000DA8AE /* FoxTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoxTableViewController.swift; sourceTree = "<group>"; };
 		4EFFF9F71AFAEB5500C45121 /* Campfire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Campfire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EFFF9FB1AFAEB5500C45121 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4EFFF9FC1AFAEB5500C45121 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 				4EFFF9FC1AFAEB5500C45121 /* AppDelegate.swift */,
 				4EFFF9FE1AFAEB5500C45121 /* FirstViewController.swift */,
 				4EFFFA001AFAEB5500C45121 /* SecondViewController.swift */,
+				4EFDCC6D1B02963F000DA8AE /* FoxTableViewController.swift */,
 				4EFFFA021AFAEB5500C45121 /* Main.storyboard */,
 				4EFFFA051AFAEB5500C45121 /* Images.xcassets */,
 				4EFFFA071AFAEB5500C45121 /* LaunchScreen.xib */,
@@ -286,6 +289,7 @@
 				4EFFFA011AFAEB5500C45121 /* SecondViewController.swift in Sources */,
 				4EFFF9FD1AFAEB5500C45121 /* AppDelegate.swift in Sources */,
 				4EFFF9FF1AFAEB5500C45121 /* FirstViewController.swift in Sources */,
+				4EFDCC6E1B029641000DA8AE /* FoxTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

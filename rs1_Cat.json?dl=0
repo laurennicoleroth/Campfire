@@ -1,0 +1,92 @@
+{ "results": [
+	{
+        "cc_by": "Paul Reynolds",
+        "createdAt": "2015-03-16T14:32:37.230Z",
+        "name": "Flitz",
+        "objectId": "awc3zkKA6g",
+        "updatedAt": "2015-03-16T14:40:37.833Z",
+        "url": "http://dreamatico.com/data_images/fox/fox-8.jpg",
+        "votes": 4
+    },
+	{
+        "cc_by": "Steven Duong",
+        "createdAt": "2015-03-16T14:31:23.347Z",
+        "name": "Purrrrball",
+        "objectId": "95qxhNiDIR",
+        "updatedAt": "2015-03-16T14:40:38.627Z",
+        "url": "http://2.bp.blogspot.com/-fK3T27K_qYs/UI3gA89r6EI/AAAAAAAAGs4/Paoir9nOsy8/s1600/red-fox2.jpg",
+        "votes": 7
+    },
+	{
+        "cc_by": "Simon Whitaker",
+        "createdAt": "2015-03-16T14:30:40.406Z",
+        "name": "Azrael",
+        "objectId": "nVZ03oXNr3",
+        "updatedAt": "2015-03-16T14:40:39.699Z",
+        "url": "https://farm4.staticflickr.com/3111/2690203676_644560b3b9_z_d.jpg",
+        "votes": 1
+    },
+	{
+        "cc_by": "K-nekoTR",
+        "createdAt": "2015-03-16T14:28:28.335Z",
+        "name": "Sniper",
+        "objectId": "Xgeb2TivG8",
+        "updatedAt": "2015-03-16T14:40:40.558Z",
+        "url": "https://farm4.staticflickr.com/3754/10935675574_d923888315_z_d.jpg",
+        "votes": 9
+    },
+	{
+        "cc_by": "Marchnwe",
+        "createdAt": "2015-03-16T14:27:49.530Z",
+        "name": "Lt. Fancypaws",
+        "objectId": "jpBd8mlCn7",
+        "updatedAt": "2015-03-16T14:40:41.704Z",
+        "url": "https://farm1.staticflickr.com/25/42255444_45714db615_z_d.jpg?zz=1",
+        "votes": 10
+    },
+	{
+        "cc_by": "Mike Lawson",
+        "createdAt": "2015-03-16T14:26:36.384Z",
+        "name": "Fluffy",
+        "objectId": "vZLqeAiL7i",
+        "updatedAt": "2015-03-16T14:40:42.683Z",
+        "url": "https://farm5.staticflickr.com/4059/4628547824_2ae6a87ac8_z_d.jpg",
+        "votes": 3
+    },
+	{
+        "cc_by": "davejdoe",
+        "createdAt": "2015-03-16T14:25:06.305Z",
+        "name": "Tiger",
+        "objectId": "Dp0Y2ssUvi",
+        "updatedAt": "2015-03-16T14:40:43.655Z",
+        "url": "https://farm6.staticflickr.com/5616/15410576268_b475a2d1d6_z_d.jpg",
+        "votes": 2
+    },
+	{
+        "cc_by": "Doug Woods",
+        "createdAt": "2015-03-16T14:24:10.821Z",
+        "name": "Pipsqueek",
+        "objectId": "YHVsQBH5pB",
+        "updatedAt": "2015-03-16T14:38:32.465Z",
+        "url": "https://farm1.staticflickr.com/202/551399323_da23725ed3_z_d.jpg",
+        "votes": 0
+    },
+	{
+        "cc_by": "Mark Round",
+        "createdAt": "2015-03-16T14:23:17.106Z",
+        "name": "Sgt. Snuggles",
+        "objectId": "HWMzO1tLrp",
+        "updatedAt": "2015-03-16T14:40:47.777Z",
+        "url": "https://farm4.staticflickr.com/3546/3876407782_a6b95265f0_z_d.jpg",
+        "votes": 5
+    },
+	{
+        "cc_by": "Sebastien Batardy",
+        "createdAt": "2015-03-16T14:39:31.637Z",
+        "name": "Garfield",
+        "objectId": "nyPdVkaJ8k",
+        "updatedAt": "2015-03-16T14:40:36.630Z",
+        "url": "https://farm4.staticflickr.com/3609/3629553810_d2b3b95780_z_d.jpg",
+        "votes": 2
+    }
+] }
